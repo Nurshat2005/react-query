@@ -1,0 +1,92 @@
+:root {
+	--dark-purple: #2e003e;
+	--purple: #4c1d7f;
+	--light-purple: #7f42c7;
+	--accent-purple: #9b59b6;
+	--white: #fff;
+	--grey: #bbb;
+}
+
+body {
+	background-color: var(--dark-purple);
+	color: var(--white);
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: var(--light-purple);
+	margin-bottom: 20px;
+}
+
+.todo_add {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	p {
+		position: absolute;
+		bottom: -20px;
+	}
+}
+
+.todo_add input {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid var(--purple);
+	border-radius: 5px;
+	background-color: var(--dark-purple);
+	color: var(--white);
+	width: 250px;
+}
+
+.todo_add input::placeholder {
+	color: var(--grey);
+}
+
+.todo_add button {
+	padding: 10px 20px;
+	background-color: var(--purple);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+.todo_add button:hover {
+	background-color: var(--accent-purple);
+}
+
+.todo_add button:disabled {
+	background-color: var(--grey);
+	cursor: not-allowed;
+}
+
+.todo_add p {
+	color: var(--grey);
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	background-color: var(--purple);
+	color: var(--white);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: background-color 0.3s;
+}
+
+li:hover {
+	background-color: var(--accent-purple);
+}
